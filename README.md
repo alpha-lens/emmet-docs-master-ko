@@ -1,21 +1,21 @@
-# Official documentation site for Emmet toolkit
+# Emmet 툴킷의 공식 문서 사이트
 
-Currently, the main web-site skeleton is finished (maybe a few bugs out there), and I’m currently writing documentation for Emmet toolkit. Documentation itself is located in `src/documents` folder.
+현재, 주요 웹사이트의 기본 구조는 완성되었습니다(아마 몇 가지 버그가 있을 수 있습니다), 그리고 저는 현재 Emmet 툴킷에 대한 문서를 작성하고 있습니다. 문서 자체는 `src/documents` 폴더에 위치해 있습니다.
 
-The web-site uses [DocPad](https://github.com/bevry/docpad) for static site generation.
+이 웹사이트는 정적 사이트 생성을 위해 [DocPad](https://github.com/bevry/docpad)를 사용합니다.
 
-## Local setup
+## 로컬 설정
 
-To run this web-site locally, you need the following dependencies:
+이 웹사이트를 로컬에서 실행하려면 다음의 종속성이 필요합니다:
 
 1. Node.JS >= v0.6
 2. NPM
-3. DocPad installed globally: `npm install -g docpad`
+3. 전역으로 설치된 DocPad: `npm install -g docpad`
 
-### Running local web-site instance
+### 로컬 웹사이트 인스턴스 실행
 
-1. Clone this repo (note that this project uses submodules, please use --recursive option) and go to the cloned folder
-2. Run `npm install` to install all project local dependencies
-3. Run `docpad run`. This command will build all JS & CSS assets, generate static HTML-page and set-up local web-server (usually http://localhost:9778/) where generated web-site can be viewed.
+1. 이 저장소를 복제하십시오(이 프로젝트는 하위 모듈을 사용하므로 --recursive 옵션을 사용하십시오) 그리고 복제된 폴더로 이동합니다.
+2. `npm install`을 실행하여 모든 프로젝트의 로컬 종속성을 설치합니다.
+3. `docpad run`을 실행합니다. 이 명령은 모든 JS & CSS 자산을 빌드하고, 정적 HTML 페이지를 생성하고, 생성된 웹사이트를 볼 수 있는 로컬 웹 서버(일반적으로 http://localhost:9778/)를 설정합니다.
 
-Note that you should view the web-site _only_ with local web-server since generated pages contains absolute, cache-busted references to CSS and JS files.
+생성된 페이지에는 CSS와 JS 파일에 대한 절대적이고, 캐시가 파기된 참조가 포함되어 있으므로 웹사이트를 _오직_ 로컬 웹 서버를 통해서만 보아야 합니다.
